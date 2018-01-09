@@ -1,0 +1,72 @@
+body{
+	background-image: url(../img/background.png);
+	background-size: 100%;
+	padding-top: 5%;
+}
+
+#logo{
+	margin-top: -14.8%;
+	float: right;
+	overflow: hidden;
+}
+
+@font-face{
+	font-family: "DIN Alternate Bold";
+	src: url("../fonts/DIN Alternate Bold.ttf");
+}
+
+#sidebar_text{
+	color: white;
+	font-size: 20px;
+	text-align: right;
+	padding-top: 28%;
+	font-family: "DIN Alternate Bold";
+}
+
+.inactive{
+	opacity: 0.3;
+}
+
+.card-img{
+	box-shadow: 12px 12px 70px #280000;
+	border-radius: 15px !important;
+}
+
+.card{
+	border-radius: 20px !important;
+}
+
+#download-button {
+    color: #fff;
+    background-color: #C69182;
+    border-color: #C69182;
+    box-shadow: 1px 1px 3px grey;
+    float: right;
+    margin-right: 3.5%;
+}
+
+#download-button:hover, #download-button:focus, #download-button:active, #download-button.active {
+    color: #fff;
+    background-color: #CD9D86;
+    border-color: #CD9D86;
+    box-shadow: 2px 2px 3px grey
+}
+
+.indentright{
+	text-align: right;
+}
+
+#events{
+	width: 350%;
+}
+
+#event_details{
+	margin-top: -7.458%;
+	color: #D48383;
+	opacity: 0.8;
+}
+
+#chart_div{
+	margin-left: 10%;  
+}
+

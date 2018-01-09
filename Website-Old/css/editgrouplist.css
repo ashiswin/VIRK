@@ -1,0 +1,90 @@
+body{
+	background-image: url(../img/background.png);
+	background-size: 100%;
+	padding-top: 5%;
+}
+
+#logo{
+	margin-top: -7.458%;
+	float: right;
+	overflow: hidden;
+}
+
+@font-face{
+	font-family: "DIN Alternate Bold";
+	src: url("../fonts/DIN Alternate Bold.ttf");
+}
+
+#sidebar_text{
+	color: white;
+	font-size: 20px;
+	text-align: right;
+	padding-top: 28%;
+	font-family: "DIN Alternate Bold";
+}
+
+.inactive{
+	opacity: 0.3;
+}
+
+.card-img{
+	box-shadow: 12px 12px 70px #280000;
+	border-radius: 15px !important;
+}
+
+.card{
+	border-radius: 20px !important;
+}
+
+#save-button {
+    color: #fff;
+    background-color: #C69182;
+    border-color: #C69182;
+    box-shadow: 1px 1px 3px grey;
+    float: right;
+    margin-right: 3.5%;
+}
+#save-button:hover, #save-button:focus, #save-button:active, #save-button.active {
+    color: #fff;
+    background-color: #CD9D86;
+    border-color: #CD9D86;
+    box-shadow: 2px 2px 3px grey
+}
+
+#add-button {
+    color: #fff;
+    background-color: #C69182;
+    border-color: #C69182;
+    box-shadow: 1px 1px 3px grey;
+    float: left;
+    margin-left: 8%;
+}
+#add-button:hover, #add-button:focus, #add-button:active, #add-button.active {
+    color: #fff;
+    background-color: #CD9D86;
+    border-color: #CD9D86;
+    box-shadow: 2px 2px 3px grey
+}
+
+.indentright{
+	text-align: right;
+}
+
+#events{
+	width: 350%;
+}
+
+#event_details{
+	margin-top: -7.458%;
+	color: #D48383;
+	opacity: 0.8;
+}
+
+table{
+	margin-left: -3%;
+}
+
+tr:hover{
+	background-color: #C69182
+	color: white;
+}

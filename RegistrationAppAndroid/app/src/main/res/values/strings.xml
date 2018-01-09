@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VIRK Register</string>
+    <!-- MainActivity strings -->
+    <string name="txtIntroWaiting_text">Please tap your student/staff ID to register.</string>
+    <!-- RegistrationActivity strings -->
+    <string name="txtIntroRegistration_text">Please enter the student/staff ID to link to this card.</string>
+    <string name="edtStudentId_hint">Student/Staff ID</string>
+</resources>

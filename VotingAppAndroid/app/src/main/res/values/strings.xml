@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">VIRK Vote</string>
+    <!-- MainActivity strings -->
+    <string name="btnLogin_text">Login</string>
+    <string name="txtPassword_hint">Password</string>
+    <string name="imgISTD_contentDescription">ISTD Logo</string>
+    <!-- VotingActivity strings -->
+    <string name="txtIntro_text">"Please rate</string>
+    <string name="btn1_contentDescription">Vote 1 point</string>
+    <string name="btn2_contentDescription">Vote 2 points</string>
+    <string name="btn3_contentDescription">Vote 3 points</string>
+    <string name="btn4_contentDescription">Vote 4 points</string>
+    <string name="btn5_contentDescription">Vote 5 points</string>
+    <string name="btnVote_text">Vote</string>
+    <!-- WaitingActivity strings -->
+    <string name="txtIntroWaiting_text">Please tap your student ID to vote for</string>
+    <!-- ThankYouActivity strings -->
+    <string name="thankyou_intro_complete">Thank you for voting! You may proceed to the counter to redeem your free</string>
+    <plurals name="thankyou_intro">
+        <item quantity="one">Thank you for voting! You need another %d vote to get your free</item>
+        <item quantity="other">Thank you for voting! You need another %d votes to get your free</item>
+    </plurals>
+</resources>

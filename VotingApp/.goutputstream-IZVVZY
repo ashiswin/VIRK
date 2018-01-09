@@ -1,0 +1,94 @@
+import sys
+import resources
+from subprocess import call
+from PyQt5 import uic, QtCore
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel
+
+class MainWindow(QMainWindow):
+	def __init__(self):
+		super(MainWindow, self).__init__()
+		uic.loadUi('mainwindow.ui', self)
+		self.setWindowFlags(QtCore.Qt.Widget | QtCore.Qt.FramelessWindowHint);
+		self.spnEvent.addItems(['ISTD Showcase 2017', '3.007 Showcase 2017'])
+		self.spnEvent.activated.connect(self.eventSelected) # Listen for selection of event
+		self.btnKeyboard.clicked.connect(self.showKeyboard) # Listen for v-keyboard button press
+		self.btnConfirm.clicked.connect(self.login) # Listen for confirm button press
+		self.show()
+	
+	def eventSelected(self):
+		print self.spnEvent.currentIndex(), self.spnEvent.currentText()
+		# TODO: Load group names from server
+		
+		# Dummy data
+		groupNames = ['IoT1', 'Lol', 'Hi']
+		self.spnGroup.addItems(groupNames)
+		self.spnGroup.setEnabled(True)
+	
+	def showKeyboard(self):
+		print "showing keyboard"
+		call("matchbox-keyboard") # Launch virtual keyboard
+	
+	def login(self):
+		print "Login attempted"
+		print self.spnGroup.currentIndex()
+		print self.txtPassword.text()
+		
+		# TODO: Check if login credentials are valid
+		
+		# Switch to waiting mode and prep all windows
+		global waitingWindow
+		global logoutWindow
+		global votingWindow
+		waitingWindow = WaitingWindow("Reversi", 1)
+		logoutWindow = LogoutWindow(1)
+		waitingWindow.show()
+		self.hide()
+
+class WaitingWindow(QMainWindow):
+	def __init__(self, groupName, groupId):
+		super(WaitingWindow, self).__init__()
+		uic.loadUi('waitingwindow.ui', self)
+		self.setWindowFlags(QtCore.Qt.Widget | QtCore.Qt.FramelessWindowHint);
+		self.lblGroupName.setText(groupName)
+		self.btnLogout.clicked.connect(self.logout)
+	def logout(self):
+		# Switch to logout window
+		global logoutWindow
+		logoutWindow.show()
+		self.hide()
+
+class VotingWindow(QMainWindow):
+	def __init__(self, groupName, groupId):
+		super(VotingWindow, self).__init__()
+		uic.loadUi('votingwindow.ui', self)
+		self.setWindowFlags(QtCore.Qt.Widget | QtCore.Qt.FramelessWindowHint);
+		self.lblGroupName.setText(groupName)
+
+class LogoutWindow(QMainWindow):
+	def __init__(self, eventId):
+		super(LogoutWindow, self).__init__()
+		uic.loadUi('logoutwindow.ui', self)
+		self.setWindowFlags(QtCore.Qt.Widget | QtCore.Qt.FramelessWindowHint);
+		self.btnBack.clicked.connect(self.back)
+		self.btnConfirm.clicked.connect(self.logout)
+	def back(self):
+		# Switch to waiting window
+		global waitingWindow
+		waitingWindow.show()
+		self.hide()
+	def logout(self):
+		print self.txtPassword.text()
+		
+		#TODO: Check if logout credentials are valid
+		
+		# Switch to login window
+		global mainWindow
+		mainWindow.show()
+		self.hide()
+
+app = QApplication(sys.argv)
+mainWindow = MainWindow()
+waitingWindow = None
+logoutWindow = None
+votingWindow = None
+sys.exit(app.exec_())

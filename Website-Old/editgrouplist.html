@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.umd.min.js"></script>
+
+	<link rel="stylesheet" href="css/editgrouplist.css" type="text/css">
+  	<head>
+  		<title>Managing an Event</title>
+	    	<meta charset="utf-8">
+	    	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	</head>
+
+	<body>	
+		<div class="container">
+			<div class="col-md-offset-1 col-md-10">
+				<div class="card">
+					<img class="card-img img-responsive" src="img/container-cropped.png" width="100%">
+	 				<div class="card-img-overlay">
+						<div class="card-text">
+							<a href="logout.php"><img id="logout" src="img/logout.png" width="5%"></a>
+						</div>
+	 					<p id="sidebar_text" class="card-text col-md-3">
+							<b class="inactive">Create an Event</b>
+							<br style="display:block; content: ''; margin-top:5px">
+							<b>Manage an Event</b>
+							<br style="display:block; content: ''; margin-top:1px">
+							<b class="inactive" style="font-size: 14px">Select another event</b>
+							<br style="display:block; content: ''; margin-top:1px">
+							<b style="font-size: 14px; opacity: 0.7">Edit Group List</b>
+							<br style="display:block; content: ''; margin-top:1px">
+							<b class="inactive" style="font-size: 14px">View/Export Results</b>
+						</p>
+						<div class="card-text col-md-offset-4">
+		 					<img id="logo" src="img/logo.png" width="40%">
+		 					<div id="event_details">
+		 						<b style="font-size: 24px">ISTD - Junior 2D Challenge</b>
+			 					<br>
+			 					Date: 19th September 2017
+		 						<br>
+		 						Time: 3pm - 5pm
+		 						<br>
+			 					In-Charge: Oka Kurniawan
+		 						<br>
+							</div>				
+						</div>
+						<br>
+						<div class="col-md-offset-1 col-md-8">
+  							<table class="table table-bordered" style="color: #9B7272; border-color: #9B7272; height:260px; overflow-y:scroll; display:block">
+ 							   	<thead>
+     								<tr>
+        								<th>Group Number</th>
+       									<th style="width:26.8%">Project Name</th>
+    							   		<th style="width:25%">Last Modified</th>
+    							   		<th>Password
+    							   		<img src="img/refresh_button.png" style="width:30%"/>
+    							   		</th>
+     								</tr>
+    							</thead>
+    							<tbody>
+     								<tr>
+        								<td>#1</td>
+        								<td>KIRA</td>
+        								<td>16th June 2017</td>
+        								<td>ifna12n</td>
+     								</tr>
+      								<tr>
+        								<td>#2</td>
+        								<td>REVERSI</td>
+        								<td>16th June 2017</td>
+        								<td>isa92na</td>
+      								</tr>
+     								<tr>
+     									<td>#3</td>
+        								<td>IRK</td>
+        								<td>17th June 2017</td>
+        								<td>ki29anb</td>
+        							</tr>
+    								<tr>
+     									<td>#4</td>
+        								<td>IRK</td>
+        								<td>17th June 2017</td>
+        								<td>ki29anb</td>
+    								</tr>
+    								<tr>
+     									<td>#5</td>
+        								<td>IRK</td>
+        								<td>17th June 2017</td>
+        								<td>ki29anb</td>
+    								</tr>
+    								<tr>
+     									<td>#6</td>
+        								<td>IRK</td>
+        								<td>17th June 2017</td>
+        								<td>ki29anb</td>
+    								</tbody>
+  							</table>
+						</div>
+						<br style="display:block; content: ''; margin-top: 32%">
+						<div>
+							<button id="save-button" class="btn btn-raised btn-danger col-md-2">Save</button>
+						</div>
+						<div>
+							<button id="add-button" class="btn btn-raised btn-danger col-md-2">Add Group</button>
+						</div>
+	  				</div>
+	  			</div>
+			</div>
+		</div>
+	</body>
+</html>

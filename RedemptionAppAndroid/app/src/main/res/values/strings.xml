@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">VIRK Redeem</string>
+    <!-- MainActivity strings -->
+    <string name="btnLogin_text">Login</string>
+    <string name="txtPassword_hint">Password</string>
+    <string name="imgISTD_contentDescription">ISTD Logo</string>
+    <!-- WaitingActivity strings -->
+    <string name="txtIntroWaiting_text">Please tap your student ID to redeem your</string>
+    <!-- RedemptionActivity strings -->
+    <string name="txtIntro_text">Please collect your free</string>
+    <string name="btnRedeem_text">Redeem</string>
+</resources>

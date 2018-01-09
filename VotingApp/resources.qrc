@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>assets/button-bg.png</file>
+        <file>assets/content-bg.png</file>
+        <file>assets/ISTD Logo.png</file>
+        <file>assets/star-active.png</file>
+        <file>assets/star-normal.png</file>
+        <file>assets/keyboard.ico</file>
+    </qresource>
+</RCC>

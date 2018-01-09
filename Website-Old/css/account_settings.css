@@ -1,0 +1,100 @@
+body{
+	background-image: url(../img/background.png);
+	background-size: 100%;
+	padding-top: 5%;
+}
+a:link {
+    color: white; 
+    opacity: 0.35;
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    opacity: 0.35;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    opacity: 0.7;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    opacity: 0.35;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+#logo{
+	margin-top: -7.458%;
+	float: right;
+}
+
+@font-face{
+	font-family: "DIN Alternate Bold";
+	src: url("../fonts/DIN Alternate Bold.ttf");
+}
+
+#sidebar_text{
+	color: white;
+	font-size: 20px;
+	text-align: right;
+	padding-top: 35%;
+	font-family: "DIN Alternate Bold";
+}
+
+.form-title{
+	font-weight: bold;
+	font-size: 20px;
+	color: #D48383;
+	opacity: 0.8;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+}
+
+#form{
+	padding-top: 49.5%;
+	font-weight: lighter;
+}
+
+.inactive{
+	opacity: 0.3;
+}
+
+.card-img{
+	box-shadow: 12px 12px 70px #280000;
+	border-radius: 15px !important;
+}
+
+.card{
+	border-radius: 20px !important;
+}
+
+#update-button {
+    color: #fff;
+    background-color: #C69182;
+    border-color: #C69182;
+    box-shadow: 1px 1px 3px grey
+}
+#update-button:hover, #login-button:focus, #login-button:active, #login-button.active {
+    color: #fff;
+    background-color: #CD9D86;
+    border-color: #CD9D86;
+    box-shadow: 2px 2px 3px grey
+}
+
+.indentright{
+	text-align: right;
+}
+
+#events{
+	width: 350%;
+}
+
